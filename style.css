@@ -1,0 +1,106 @@
+body {
+    background: black;
+    background-image: url("./img/univers.jpg"); /* image de l'espace, apprait apres l'intro*/
+    background-position: center; /* Je centre l'image */
+    background-attachment: fixed; /* Elle ne bouge pas */
+    background-size: cover; /* Et prend tout l'écran */ 
+    color:#F1C93F; /* couleur du texte, c'est la couleur qu'utilise star wars :) */
+}
+
+#intro {
+    animation-name: introAnimation; /* je donne un nom à mon animation et je l'appelle avec @keyframes*/
+    animation-duration: 9s; /* Durée de mon intro */
+    transition: .2s ease;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    color: skyblue;
+    opacity: 0; /* Opacité: c'est l'animation qui l'a rend visible au début */  
+    width: 100%;
+    height: 100vh;
+    background: black;
+    z-index: 10;
+    display:flex;
+    justify-content: center; /* Je centre horizontalement */
+    align-items:center; /* Je centre verticalement */
+    flex-direction:column;
+}
+
+@keyframes introAnimation {
+    0% {opacity: 1;} /* au début visible */
+    50% {opacity: 1;}
+    100% {opacity: 0;} /* au bout des 10s devient invisible*/
+}
+/* Le texte il y a longtemps */
+#lgt{
+    font-size: 1.5em;
+}
+
+/* mon texte potter */
+#potter{
+font-family: "harry potter"; /* la police dont j'ai défini le nom dans @font-face */
+font-size:2em;
+}
+/* J'ai téléchargé une police que j'ai mis dans le dossier police */
+@font-face {
+    font-family: "harry potter"; /* Je lui donne un nom*/
+    src :url('./police/HARRP.TTF'); /* Je dis ou la police se trouve */
+}
+
+/* Mon texte seigneur des anneaux */
+#ring{
+font-family:"seigneur des anneaux";
+font-size:1.5em;
+}
+@font-face{
+    font-family: "seigneur des anneaux";
+    src:url('./police/ring.ttf');
+}
+
+/* Mon texte star wars */
+#wars{
+    font-family:"star wars";
+    font-size:1.8em;
+    }
+    @font-face{
+        font-family: "star wars";
+        src:url('./police/Starjedi.ttf');
+    }
+/* ............................. */
+
+#textDefile {
+    font-family:"star wars";
+    font-size:1.7em;
+    max-width: 880px;
+    margin: 0 auto;
+    transform: perspective(300px) rotateX(15deg);
+    padding-left:15px;
+}
+
+#textDefileEnfant{
+    animation-name: animationTextDefile;
+    animation-duration: 100s;
+    opacity: 0;
+}
+
+@keyframes animationTextDefile {
+    0% {transform: translate3d(0,100vh,0); opacity: 0;}
+    .25% {transform: translate3d(0,100vh,0); opacity: 1;}
+    80% {opacity: 1;}
+    95% {opacity: 0;}
+    100% {transform: translate3d(0,-100vh,0);}
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    line-height: 2em; /*L'espace entre mes lignes*/
+    /* width: 100%;
+    text-align: justify; */
+}
+
+
