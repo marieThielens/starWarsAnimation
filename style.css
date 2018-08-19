@@ -7,11 +7,11 @@ body {
     color:#F1C93F; /* couleur du texte, c'est la couleur qu'utilise star wars :) */
 }
 
+/* .....................Texte/ Animation d'intro.................................................................... */
 #intro {
     animation-name: introAnimation; /* je donne un nom à mon animation et je l'appelle avec @keyframes*/
     animation-duration: 9s; /* Durée de mon intro */
     transition: .2s ease;
-
     position: absolute;
     left: 0;
     top: 0;
@@ -81,7 +81,7 @@ font-size:1.5em;
 
 #textDefileEnfant{
     animation-name: animationTextDefile;
-    animation-duration: 100s;
+    animation-duration: 90s;
     opacity: 0;
 }
 

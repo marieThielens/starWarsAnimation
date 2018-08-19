@@ -7,7 +7,7 @@
     </head>
     
     <body>
-        <audio src="musique/StarWars.mp3"  type="audio/mp3" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 9000)">Star Wars March Theme</audio>
+            <!-- <audio src="./musique/star.mp3"  type="audio/mp3" autoplay>Star Wars March Theme</audio> -->
 
         <div id="intro">
            <p id="lgt">Il y a fort fort longtemps...</p>
@@ -16,11 +16,8 @@
            <p id="wars">pour devenir un chevalier jedi ..</p>
         </div>
 
-        
-
         <div id="textDefile">
             <div id="textDefileEnfant">
-                    
                 <h1>A la recherche du code perdu</h1>
                 <p>C'est la guerre ! La république croule sous le manque de codeur. il faut empêcher les vilains méchants de pirater, ne pas protéger les données ou pire : faire du moche</p>
                 <p>il y a des héros dans les deux camps. Le front, le back.. le mal est partout.</p>
@@ -30,5 +27,10 @@
             </div>
         </div>
 
+
+
+        <audio controls="controls" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 9000)">
+                <source src="./musique/star.mp3" type="audio/mp3" />
+        </audio>
     </body>
 </html>
