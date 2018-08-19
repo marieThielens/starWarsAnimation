@@ -8,6 +8,9 @@
     
     <body>
             <!-- <audio src="./musique/star.mp3"  type="audio/mp3" autoplay>Star Wars March Theme</audio> -->
+            <audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 9000)">
+                    <source src="./musique/star.mp3" type="audio/mp3" />
+            </audio>
 
         <div id="intro">
            <p id="lgt">Il y a fort fort longtemps...</p>
@@ -29,8 +32,6 @@
 
 
 
-        <audio controls="controls" onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 9000)">
-                <source src="./musique/star.mp3" type="audio/mp3" />
-        </audio>
+
     </body>
 </html>

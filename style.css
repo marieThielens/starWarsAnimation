@@ -75,7 +75,7 @@ font-size:1.5em;
     font-size:1.7em;
     max-width: 880px;
     margin: 0 auto;
-    transform: perspective(300px) rotateX(15deg);
+    transform: perspective(500px) rotateX(16deg); /* Je donne la forme d'un trapèze à mon texte */
     padding-left:15px;
 }
 
